@@ -1,0 +1,12 @@
+CREATE DATABASE tasklist; 
+USE tasklist;
+CREATE TABLE Task (
+    ID int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Title varchar(255) NOT NULL,
+    Finish boolean not null,
+    Content varchar(255),
+    dt_creation DATE,
+    dt_edition DATE,
+    dt_remove DATE,
+    dt_conclusion DATE
+);
